@@ -35,7 +35,8 @@ messageForm.addEventListener('submit', function (event) {
     var removeButton = document.createElement('button');
     removeButton.innerText = 'remove';
     removeButton.type = 'button';
-
+    removeButton.classList.add('remove-button');
+    
     removeButton.addEventListener('click', function () {
         var entry = removeButton.parentNode;
         entry.remove();
