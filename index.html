@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Adriana's Website</title>
+    <link rel="stylesheet" href="css/index.css">
 </head>
 
 <body>
@@ -17,7 +18,7 @@
     <section>
         <h2>Experience</h2>
         <h3>Contact Tracing - Medical Edge Recruitment: November 2020 - December 2021</h3>
-        <ul>
+        <ul class="experience-list">
             <li>Made phone calls to assigned contacts and helped contacts understand pertinent information regarding
                 their needs</li>
             <li>Collaborated with team members to ensure the best care for contacts</li>
@@ -27,7 +28,7 @@
     </section>
     <section id="skills">
         <h2>Skills</h2>
-        <ul></ul>
+        <ul class="skills-list"></ul>
     </section>
     <section>
         <h2>Connect</h2>
@@ -40,24 +41,30 @@
     <section>
         <h2>Leave a Message</h2>
         <form name="leave_message">
-            <label for="usersName">Name:</label>
-            <br>
-            <input type="text" id="usersName" name="usersName" required>
-            <br>
-            <label for="usersEmail">Email Address:</label>
-            <br>
+
+            <div class="form-top">
+                <label for="usersName">Name:</label>
+                <br>
+                <input type="text" id="usersName" name="usersName" required>
+                <br>
+            </div>
+            <div class="form-top">
+                <label for="usersEmail">Email Address:</label>
+                <br>
             <input type="email" id="usersEmail" name="usersEmail" required>
-            <br>
+            
+        </div>
+        <br>
             <label for="usersMessage">Message:</label>
             <br>
             <textarea name="usersMessage" id="usersMessage" required></textarea>
             <br>
-            <button type="submit">Submit</button>
+            <button class="submit-button" type="submit">Submit</button>
         </form>
     </section>
     <section id="messages">
         <h2>Messages</h2>
-        <ul></ul>
+        <ul class="messages-list"></ul>
     </section>
     <footer></footer>
     <script src="js/index.js" defer></script>
